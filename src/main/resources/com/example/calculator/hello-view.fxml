@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="385.0" prefWidth="362.0" spacing="20.0" style="-fx-background-color: #CCCCCC; -fx-background-color: ;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.HelloController">
+   <padding>
+      <Insets bottom="0.0" left="0.0" right="0.0" top="0.0" />
+    </padding>
+   <children>
+      <Pane minWidth="-Infinity" prefHeight="399.0" prefWidth="362.0">
+         <children>
+            <Pane layoutX="3.0" layoutY="37.0" prefHeight="65.0" prefWidth="356.0" style="-fx-background-color: #999999;">
+               <children>
+                  <Label fx:id="lblResult" alignment="TOP_RIGHT" layoutX="-1.0" layoutY="28.0" prefHeight="36.0" prefWidth="345.0" text="0.0" textFill="#292727">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="4.0" layoutY="3.0" prefHeight="23.0" prefWidth="356.0">
+               <children>
+                  <ColorPicker layoutX="40.0" layoutY="1.0" prefHeight="21.0" prefWidth="86.0" />
+                  <Button layoutY="1.0" mnemonicParsing="false" text="Menu">
+                     <font>
+                        <Font size="10.0" />
+                     </font></Button>
+                  <ImageView fitHeight="23.0" fitWidth="32.0" layoutX="334.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../2.jpg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Button id="nb0" layoutX="15.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="0" />
+            <Button id="nb1" layoutX="16.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="1" />
+            <Button id="nb2" layoutX="96.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="2" />
+            <Button id="nb3" layoutX="177.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="3" />
+            <Button id="nb4" layoutX="15.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="4" />
+            <Button id="nb5" layoutX="95.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="5" />
+            <Button id="nb6" layoutX="175.0" layoutY="192.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="6" />
+            <Button id="nb7" layoutX="15.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="7" />
+            <Button id="nb8" layoutX="95.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="8" />
+            <Button id="nb9" layoutX="175.0" layoutY="131.0" mnemonicParsing="false" onMouseClicked="#onNumberClicked" prefHeight="60.0" prefWidth="80.0" text="9" />
+            <Button id="nbEquals" layoutX="97.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="60.0" prefWidth="80.0" text="=" />
+            <Button id="nbClear" layoutX="177.0" layoutY="314.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="60.0" prefWidth="80.0" text="C" />
+            <Button id="nbPlus" layoutX="270.0" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="60.0" prefWidth="80.0" text="+" />
+            <Button id="nbMinus" layoutX="270.0" layoutY="191.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="60.0" prefWidth="80.0" text="-" />
+            <Button id="nbMultiply" layoutX="270.0" layoutY="316.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="60.0" prefWidth="80.0" text="*" />
+            <Button id="nbDivide" layoutX="270.0" layoutY="253.0" mnemonicParsing="false" onMouseClicked="#onSymbolClicked" prefHeight="60.0" prefWidth="80.0" text="/" />
+         </children></Pane>
+   </children>
+</VBox>
